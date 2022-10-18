@@ -288,15 +288,16 @@ p.small-text {
 /* Display Hover Menu  */
 
 #header-product-cat ul.menu-product-cat > li > ul {
-    display: block;
-    position: none;
+    display: none;
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: #fff;
     border: solid 1px #eee;
+    border-radius: 0 0px 10px 10px;
     padding: 50px 50px 50px 50px;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,0.28);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18);
     text-align: left;
     z-index: 99;
 }
@@ -321,13 +322,8 @@ p.small-text {
 
 #header-product-cat ul.menu-product-cat > li > ul > li > a > img {
     display: block;
-    margin: 0 auto 25px;
+    margin: auto;
 }
-
-/*
-/       Image Header Menu dropdown
---------------------------------
-*/
 
 .image-md-list {
     width: 55%;
@@ -336,10 +332,11 @@ p.small-text {
     background-color: #FBFBFB;
     border: solid 0px transparent;
     transition: border 0.25s linear;
+    margin: 10px 0;
 }
 
-.md-link-product:hover span {
-    text-decoration: none;
+.md-p-list{
+    margin: 20px 0 10px;
 }
 
 .md-link-product:hover .image-md-list {
