@@ -15,15 +15,14 @@
 }
 
 .container{
-	background-color: white;
-    padding: 0 40px;
-	max-width: 1060px;
+	background-color: #ffffff;
 }
+
 
 #page {
     font-family: 'Poppins', sans-serif;
 	padding: 40px 0 0;
-	background-color: #f4f4f4;
+	background-color: #F8F8F8;
 }
 
 /*
@@ -195,7 +194,7 @@ p.small-text {
 
 .button-container:hover {
     background-color: #006430;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .button-container:hover .button-text{
@@ -289,8 +288,8 @@ p.small-text {
 /* Display Hover Menu  */
 
 #header-product-cat ul.menu-product-cat > li > ul {
-    display: none;
-    position: absolute;
+    display: block;
+    position: none;
     top: 100%;
     left: 0;
     width: 100%;
@@ -302,7 +301,7 @@ p.small-text {
     z-index: 99;
 }
 
-#header-product-cat ul.menu-product-cat > li:hover {
+#header-product-cat ul.menu-product-cat > li:hover ul {
     display: block;
 }
 
@@ -322,5 +321,28 @@ p.small-text {
 
 #header-product-cat ul.menu-product-cat > li > ul > li > a > img {
     display: block;
-    margin: auto;
+    margin: 0 auto 25px;
+}
+
+/*
+/       Image Header Menu dropdown
+--------------------------------
+*/
+
+.image-md-list {
+    width: 55%;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-color: #FBFBFB;
+    border: solid 0px transparent;
+    transition: border 0.25s linear;
+}
+
+.md-link-product:hover span {
+    text-decoration: none;
+}
+
+.md-link-product:hover .image-md-list {
+    background-color: #F8F8F8;
+    border: solid 1px #EEE;
 }
