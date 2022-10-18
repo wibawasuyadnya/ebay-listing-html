@@ -283,5 +283,44 @@ p.small-text {
 }
 
 #header-product-cat ul.menu-product-cat > li#dropdown-all-cats{
-	display: block;
+	display: none;
+}
+
+/* Display Hover Menu  */
+
+#header-product-cat ul.menu-product-cat > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #eee;
+    padding: 50px 50px 50px 50px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.28);
+    text-align: left;
+    z-index: 99;
+}
+
+#header-product-cat ul.menu-product-cat > li:hover {
+    display: block;
+}
+
+#header-product-cat ul.menu-product-cat > li > ul > li {
+    float: left;
+    width: 33.333%;
+    list-style: none;
+}
+
+#header-product-cat ul.menu-product-cat > li > ul > li > a {
+    display: block;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+
+#header-product-cat ul.menu-product-cat > li > ul > li > a > img {
+    display: block;
+    margin: auto;
 }
