@@ -1,0 +1,287 @@
+/*
+/ Ownership under allgoodbud copyright
+/ ------------------------------ */
+/*
+ *
+ ******************** Custom BRITISH CANNABIS™ Layout.css **********************/
+
+/*
+/          Global
+------------------------------ 
+*/
+
+#page + center{
+	display: none;
+}
+
+.container{
+	background-color: white;
+    padding: 0 40px;
+	max-width: 1060px;
+}
+
+#page {
+    font-family: 'Poppins', sans-serif;
+	padding: 40px 0 0;
+	background-color: #f4f4f4;
+}
+
+/*
+/    Global Typography
+------------------------------ 
+*/
+
+h1{
+    color: #333;
+    font-size: 34px;
+}
+
+h2{
+    color:#333;
+    font-size: 28px;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+h4{
+    color: #333;
+    font-size: 20px;
+}
+
+h5{
+    color: #333;
+    font-size: 18px;
+}
+
+p{
+    color: #7a7a7a;
+    font-size: 15px;
+}
+
+p.small-text {
+    color: #7a7a7a;
+    font-size: 13px;
+}
+
+/*
+/     Animation Transition
+-----------------------------
+*/
+
+.anim-transition {
+    transition:  all .25s linear;
+    -o-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	-webkit-transition: all .15s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Imagefadein{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+/      input-control ( Maybe will be deleted or unused soon ) 
+------------------------------------------------------------------
+*/
+
+.input-control {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #dedede;
+}
+
+
+/*
+/       Image Settings
+------------------------------ 
+*/
+
+
+.image-multidevice {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-center {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*
+/       Button Style
+------------------------------ 
+*/
+
+.buttons {
+    margin: 40px 0 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 24px;
+}
+
+.button-default {
+    background-color: #006430;
+}
+
+.button-default:hover {
+    text-decoration: none;
+    background-color: #003E1D;
+}
+
+/*
+/         Header
+------------------------------ 
+*/
+
+#header .container {
+    position:  relative;
+    text-align: center;
+}
+
+#header .logo {
+    display: inline-block;
+    margin: 25px 0;
+}
+
+#header .logo-image {
+    width: 180px;
+}
+
+#header .button-container{
+    position: absolute;
+    top: 30%;
+    right: 40px;
+	padding: 8px 15px 8px 15px;
+    border: solid 2px #006430;
+    border-radius: 24px;
+    height: 50px;
+    width: 130px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.button-container:hover {
+    background-color: #006430;
+    transform: scale(1.1);
+}
+
+.button-container:hover .button-text{
+    color: #fff !important;
+}
+
+#header .button-text {  
+    padding: 15px 0px 5px 0px;
+    font-size: 14px;
+    color: #006430;
+    font-weight: 500;
+}
+
+/*
+/       Header-Menu
+--------------------------------
+*/
+
+
+#header-product-cat ul.menu-product-cat{
+    position: relative;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  
+  #header-product-cat ul.menu-product-cat .row:before,
+  #header-product-cat ul.menu-product-cat .clearfix:before {
+      content: none;
+  }
+  
+  #header-product-cat ul.menu-product-cat {
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+  #header-product-cat ul.menu-product-cat > li {
+    flex-grow: 1;
+    list-style: none;
+    text-align: center;
+  }
+
+  ul.menu-product-cat  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header-product-cat ul.menu-product-cat > li.hide,
+  #header-product-cat ul.menu-product-cat > li#ID-1 {
+    display: none;
+  }
+
+  /* Remove unused some cateogries at menu */
+
+  #heade-product-cat ul.menu-product-cat > li:nth-of-type(7),
+  #header-product-cat ul.menu-product-cat > li:nth-of-type(8),
+  #header-product-cat ul.menu-product-cat > li:nth-of-type(9),
+  #heade-product-cat ul.menu-product-cat > li:nth-of-type(10),
+  #header-product-cat ul.menu-product-cat > li:nth-of-type(11),
+  #header-product-cat ul.menu-product-cat > li:nth-of-type(12) {
+    display: none;
+  }
+
+  
+#header-product-cat ul.menu-product-cat > li > a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    height: 60px;
+    line-height: 55px;
+    color: #333;
+
+}
+
+#header-product-cat ul.menu-product-cat > li:hover > a, 
+#header-product-cat ul.menu-product-cat > li > a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #61CE70;
+}
+
+#header-product-cat ul.menu-product-cat > li#dropdown-all-cats{
+	display: block;
+}
