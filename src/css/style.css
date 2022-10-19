@@ -402,8 +402,25 @@ p.small-text {
 
 /* Image Selection Thumbnail effect */
 
-.image-selection 
+.image-selection .thumbnail-selection {
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    border: solid 1px #EEE;
+}
 
+.image-selection .thumbnails-navigation {
+    display: none;
+}
 
+.image-selection .thumbnails-navigation:checked + .thumbnail-selection {
+    display: block;
+}
 
-
+.image #thumbnail-data1:checked ~ #view-image-1,
+.image #thumbnail-data-2:checked ~ #view-image-2,
+.image #thumbnail-data-3:checked ~ #view-image-3,
+.image #thumbnail-data-4:checked ~ #view-image-4,
+.image #thumbnail-data-5:checked ~ #view-image-5 {
+	display: block;
+}
