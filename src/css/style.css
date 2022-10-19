@@ -1,5 +1,4 @@
 /*
-/ Ownership under allgoodbud copyright
 / ------------------------------ */
 /*
  *
@@ -354,3 +353,56 @@ p.small-text {
     background-color: #F8F8F8;
     border: solid 1px #EEE;
 }
+
+/*
+/        Main Container
+------------------------------ 
+*/
+
+
+#main > .container{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+	#main > .container{
+		padding-top: 15px;
+	}
+}
+
+
+
+/*
+/       Image Product Selection 
+-----------------------------------------
+*/
+
+.images-view {
+    position: relative;
+    margin: 0 0 0 -15px;
+}
+
+@media (min-width:200px) and (max-width:575px){
+	.images{
+		margin:0;
+	}
+}
+
+.images-view .key-sentinel {
+    width: 100%;
+}
+
+.images-view .image-selection {
+    width: 20%;
+    float: left;
+    position: static;
+    padding-right: 15px;
+}
+
+/* Image Selection Thumbnail effect */
+
+
+
+
+
