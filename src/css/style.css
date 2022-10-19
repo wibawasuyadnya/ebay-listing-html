@@ -177,6 +177,9 @@ p.small-text {
     width: 180px;
 }
 
+
+/* Button Header ( NOT USED YET ) */
+/* 
 #header .button-container{
     position: absolute;
     top: 30%;
@@ -207,6 +210,10 @@ p.small-text {
     color: #006430;
     font-weight: 500;
 }
+
+*/ 
+/* End Button Header Styled ( NOT USED YET )  */
+
 
 /*
 /       Header-Menu
